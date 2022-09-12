@@ -1,0 +1,14 @@
+Challenges I encountered:
+
+1. Creating the dictionaries. After creating one dictionary (key=alpha, value=morse), I used dictionary comprehension
+to create another dictionary that reversed the key:value pairs in order to go from morse back to alpha-numeric. Easy.
+
+2. Going from Alpha to Morse was pretty easy, going from Morse back to Alpha was a bit more tricky because of the spacing
+issues noted below.
+
+3. How to format the morse code in the dictionaries. I originally tried to use expanded notation that accounted for
+every unit(space) in morse code using 'o' for dots and '---' for dashes, with a space between each part. This led to
+complexities when splitting and joining the strings because of all the added spaces. In the end, to simplify the logic
+and UX, I used a simpler notation of '.' for dots and '-' for dashes, with no spaces between parts (only spaces between
+completed letters).
+
